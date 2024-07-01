@@ -13,3 +13,15 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+let newArray = [];
+let anonFunc = arr.map(function (n) {
+    if (typeof(n) === "number") {
+        newArray.push(n*3)
+        return n*3
+    } else {
+        newArray.push("ARRR!")
+        return "ARRR!"
+    }
+});
+
+console.log(anonFunc);
