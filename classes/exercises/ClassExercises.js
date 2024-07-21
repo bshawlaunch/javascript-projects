@@ -21,7 +21,7 @@ class Book {
        super(title, author, copyright, isbn, pages, timesCheckedOut, discarded);
     }
  
-    dispose(currentYear){
+    dispose(currentYear=2024){
        if (currentYear-this.copyright > 5) {
           this.discarded = 'Yes';
        }
@@ -45,4 +45,7 @@ let novel1 = new Novel('Pride and Prejudice', 'Jane Austen', 1813, '111111111111
 let manual1 = new Manual('Top Secret Shuttle Building Manual', 'Redacted', 2013, '0000000000', 1147, 1, 'No')
 
 // Code exercises 4 & 5 here:
-
+manual1.dispose();
+novel1.checkout(5);
+console.log(novel1);
+console.log(manual1);
