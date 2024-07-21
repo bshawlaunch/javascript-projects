@@ -26,6 +26,7 @@ let studentLabs = [
   }
 ];
 
+
 gradeLabs(studentLabs);
 
 let studentLabs2 = [
